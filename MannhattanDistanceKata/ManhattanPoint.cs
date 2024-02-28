@@ -1,4 +1,6 @@
-﻿namespace MannhattanDistanceKata
+﻿using System.Runtime.CompilerServices;
+
+namespace MannhattanDistanceKata
 {
     public class ManhattanPoint
     {
@@ -9,6 +11,9 @@
         {
             _x = X;
             _y = Y;
+            List<int> myIntList = new List<int>();
+            List<int> myIntList2 = new List<int>();
+            
         }
 
         public int GetXPosition()
