@@ -1,6 +1,6 @@
 namespace Banking_Kata
 {
-    public class UnitTest1
+    public class AccountTest
     {
         [Fact]
         public void WhenADepositInMade_BankAccountInceasesByThisAmount()
@@ -50,6 +50,7 @@ namespace Banking_Kata
             string expectedOutput = "Date Amount Balance\n" +
                                     $"{DateTime.Today} +500 500\n" +
                                     $"{DateTime.Today} -100 400\n";
+
             //Act
             account.deposit(500);
             account.withdraw(100);
