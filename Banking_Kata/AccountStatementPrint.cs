@@ -4,10 +4,10 @@
     internal static class AccountStatementPrint
     {
 
-        public static string PrintStatement(List<string> statementList)
+        public static string PrintStatement(List<BankingTransaction> statementList)
         {
             string printedStatement = "Date Amount Balance\n";
-            foreach (string statement in statementList)
+            foreach (BankingTransaction statement in statementList)
             {
                 printedStatement += statement + "\n";
             }

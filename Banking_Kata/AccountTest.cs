@@ -12,7 +12,7 @@ namespace Banking_Kata
             account.Deposit(500);
 
             //Assert
-            Assert.Equal(500, account.amount);
+            Assert.Equal(500, account.balance);
         }
 
         [Fact]
@@ -25,7 +25,7 @@ namespace Banking_Kata
             account.Withdraw(500);
 
             //Assert
-            Assert.Equal(-500, account.amount);
+            Assert.Equal(-500, account.balance);
         }
 
         [Fact]
@@ -39,7 +39,7 @@ namespace Banking_Kata
             account.Withdraw(500);
 
             //Assert
-            Assert.Equal(0, account.amount);
+            Assert.Equal(0, account.balance);
         }
     }
 }

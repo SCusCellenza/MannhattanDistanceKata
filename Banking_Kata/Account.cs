@@ -3,24 +3,24 @@ namespace Banking_Kata
 {
     internal class Account
     {
-        public int amount { get; private set; }
-        public List<string> statement { get; private set; }
+        public int balance { get; private set; }
+        public List<BankingTransaction> statement { get; private set; }
 
         public Account()
         {
-            statement = new List<string>();
+            statement = new List<BankingTransaction>();
         }
 
         public void Deposit(int depositAmount)
         {
-            amount += depositAmount;
-            statement.Add($"{DateTime.Today.ToString("d")} +{depositAmount} {amount}");
+            balance += depositAmount;
+            statement.Add(new BankingTransaction(DateTime.Today, depositAmount, balance));
         }
 
         public void Withdraw(int withdrawAmount)
         {
-            amount -= withdrawAmount;
-            statement.Add($"{DateTime.Today.ToString("d")} -{withdrawAmount} {amount}");
+            balance -= withdrawAmount;
+            statement.Add(new BankingTransaction(DateTime.Today, withdrawAmount, balance));
         }
     }
 }
