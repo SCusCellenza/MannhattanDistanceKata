@@ -9,7 +9,7 @@ namespace Banking_Kata
             Account account = new Account();
 
             //Act
-            account.deposit(500);
+            account.Deposit(500);
 
             //Assert
             Assert.Equal(500, account.amount);
@@ -22,7 +22,7 @@ namespace Banking_Kata
             Account account = new Account();
 
             //Act
-            account.withdraw(500);
+            account.Withdraw(500);
 
             //Assert
             Assert.Equal(-500, account.amount);
@@ -36,10 +36,10 @@ namespace Banking_Kata
             string expectedOutput = "Date Amount Balance\n" +
                                     $"{DateTime.Today.ToString("d")} +500 500\n";
             //Act
-            account.deposit(500);
+            account.Deposit(500);
 
             //Assert
-            Assert.Equal(expectedOutput, account.printStatement());
+            Assert.Equal(expectedOutput, account.PrintStatement());
         }
 
         [Fact]
@@ -52,11 +52,11 @@ namespace Banking_Kata
                                     $"{DateTime.Today.ToString("d")} -100 400\n";
 
             //Act
-            account.deposit(500);
-            account.withdraw(100);
+            account.Deposit(500);
+            account.Withdraw(100);
 
             //Assert
-            Assert.Equal(expectedOutput, account.printStatement());
+            Assert.Equal(expectedOutput, account.PrintStatement());
         }
     }
 }
