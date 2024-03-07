@@ -13,7 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiplesOf3or5", "Multiple
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeapYearsKata", "LeapYearsKata\LeapYearsKata.csproj", "{7E2B6FBB-811E-4953-BF48-8EEBE3968F34}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQKata", "LINQ_Kata\LINQKata.csproj", "{E9E9C425-8267-43A0-BE34-36A37D22E9EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQKata", "LINQ_Kata\LINQKata.csproj", "{E9E9C425-8267-43A0-BE34-36A37D22E9EE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FizzBuzz", "FizzBuzz\FizzBuzz.csproj", "{C15FC70C-7400-4C34-A8AF-FB752DE12411}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Banking_Kata", "Banking_Kata\Banking_Kata.csproj", "{89D5384A-D933-4C8F-A24A-CF44FE632BCD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,14 @@ Global
 		{E9E9C425-8267-43A0-BE34-36A37D22E9EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9E9C425-8267-43A0-BE34-36A37D22E9EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9E9C425-8267-43A0-BE34-36A37D22E9EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C15FC70C-7400-4C34-A8AF-FB752DE12411}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C15FC70C-7400-4C34-A8AF-FB752DE12411}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C15FC70C-7400-4C34-A8AF-FB752DE12411}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C15FC70C-7400-4C34-A8AF-FB752DE12411}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89D5384A-D933-4C8F-A24A-CF44FE632BCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89D5384A-D933-4C8F-A24A-CF44FE632BCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89D5384A-D933-4C8F-A24A-CF44FE632BCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89D5384A-D933-4C8F-A24A-CF44FE632BCD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
