@@ -8,7 +8,7 @@ namespace Banking_Kata
 
         public Account()
         {
-            statement = new List<string> {"Date Amount Balance"};
+            statement = new List<string>();
         }
 
         public void Deposit(int depositAmount)

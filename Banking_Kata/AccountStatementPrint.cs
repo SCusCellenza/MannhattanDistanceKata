@@ -6,7 +6,7 @@
 
         public static string PrintStatement(List<string> statementList)
         {
-            string printedStatement = "";
+            string printedStatement = "Date Amount Balance\n";
             foreach (string statement in statementList)
             {
                 printedStatement += statement + "\n";
