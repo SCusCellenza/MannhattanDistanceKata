@@ -34,7 +34,7 @@ namespace Banking_Kata
             //Arrange 
             Account account = new Account();
             string expectedOutput = "Date Amount Balance\n" +
-                                    $"{DateTime.Today} +500 500\n";
+                                    $"{DateTime.Today.ToString("d")} +500 500\n";
             //Act
             account.deposit(500);
 
@@ -48,8 +48,8 @@ namespace Banking_Kata
             //Arrange 
             Account account = new Account();
             string expectedOutput = "Date Amount Balance\n" +
-                                    $"{DateTime.Today} +500 500\n" +
-                                    $"{DateTime.Today} -100 400\n";
+                                    $"{DateTime.Today.ToString("d")} +500 500\n" +
+                                    $"{DateTime.Today.ToString("d")} -100 400\n";
 
             //Act
             account.deposit(500);
