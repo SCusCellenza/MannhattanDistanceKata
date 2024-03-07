@@ -1,12 +1,13 @@
 ﻿namespace Banking_Kata
 {
-    internal class AccountStatementPrint
+    //Class passed internal to avoid other dev to create a non static method
+    internal static class AccountStatementPrint
     {
 
-        public static String PrintStatement(List<String> statementList)
+        public static string PrintStatement(List<string> statementList)
         {
-            String printedStatement = "";
-            foreach (String statement in statementList)
+            string printedStatement = "";
+            foreach (string statement in statementList)
             {
                 printedStatement += statement + "\n";
             }

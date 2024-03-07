@@ -27,5 +27,19 @@ namespace Banking_Kata
             //Assert
             Assert.Equal(-500, account.amount);
         }
+
+        [Fact]
+        public void WhenAWithdrawAfterDepositIsDone_BankAccountShouldBeEqualToDepositMinusWithDraw()
+        {
+            //Arrange 
+            Account account = new Account();
+
+            //Act
+            account.Deposit(500);
+            account.Withdraw(500);
+
+            //Assert
+            Assert.Equal(0, account.amount);
+        }
     }
 }

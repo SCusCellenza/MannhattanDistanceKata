@@ -1,14 +1,14 @@
 ﻿
 namespace Banking_Kata
 {
-    internal class Account : AccountStatementPrint
+    internal class Account
     {
         public int amount { get; private set; }
-        public List<String> statement { get; private set; }
+        public List<string> statement { get; private set; }
 
         public Account()
         {
-            statement = new List<String> {"Date Amount Balance"};
+            statement = new List<string> {"Date Amount Balance"};
         }
 
         public void Deposit(int depositAmount)
