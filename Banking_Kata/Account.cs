@@ -7,29 +7,29 @@ namespace Banking_Kata
     internal class Account
     {
         public int amount;
-        public List<String> statement;
+        private List<String> _statement;
 
         public Account()
         {
-            statement = new List<String> {"Date Amount Balance"};
+            _statement = new List<String> {"Date Amount Balance"};
         }
 
         public void deposit(int depositAmount)
         {
             amount += depositAmount;
-            statement.Add($"{ DateTime.Today} +{depositAmount} {amount}");
+            _statement.Add($"{DateTime.Today.ToString("d")} +{depositAmount} {amount}");
         }
 
         public void withdraw(int withdramAmount)
         {
             amount -= withdramAmount;
-            statement.Add($"{DateTime.Today} -{withdramAmount} {amount}");
+            _statement.Add($"{DateTime.Today.ToString("d")} -{withdramAmount} {amount}");
         }
 
         public String printStatement()
         {
             String printedStatement = "";
-            foreach (String statement in statement)
+            foreach (String statement in _statement)
             {
                 printedStatement += statement + "\n";
             }
