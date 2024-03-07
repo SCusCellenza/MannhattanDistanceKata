@@ -14,13 +14,13 @@ namespace Banking_Kata
         public void Deposit(int depositAmount)
         {
             balance += depositAmount;
-            statement.Add(new BankingTransaction(DateTime.Today, depositAmount, balance));
+            statement.Add(new BankingTransaction(DateTime.Today, +depositAmount, balance));
         }
 
         public void Withdraw(int withdrawAmount)
         {
             balance -= withdrawAmount;
-            statement.Add(new BankingTransaction(DateTime.Today, withdrawAmount, balance));
+            statement.Add(new BankingTransaction(DateTime.Today, -withdrawAmount, balance));
         }
     }
 }

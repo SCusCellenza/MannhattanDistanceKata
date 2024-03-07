@@ -3,13 +3,13 @@
     public class BankingTransaction
     {
         public DateTime date;
-        public int depositAmount;
+        public int amount;
         public int balance;
 
-        public BankingTransaction(DateTime date, int depositAmount, int balance)
+        public BankingTransaction(DateTime date, int amount, int balance)
         {
             this.date = date;
-            this.depositAmount = depositAmount;
+            this.amount = amount;
             this.balance = balance;
         }
     }

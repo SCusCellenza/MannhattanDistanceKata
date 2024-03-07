@@ -4,14 +4,13 @@
     internal static class AccountStatementPrint
     {
 
-        public static string PrintStatement(List<BankingTransaction> statementList)
+        public static string PrintStatement(List<BankingTransaction> transactiontList)
         {
             string printedStatement = "Date Amount Balance\n";
-            foreach (BankingTransaction statement in statementList)
+            foreach (BankingTransaction transaction in transactiontList)
             {
-                printedStatement += statement + "\n";
+                printedStatement += $"{transaction.date.ToString("d")} {(transaction.amount >= 0 ? "+" : "")}{transaction.amount} {transaction.balance}\n";
             }
-
             return printedStatement;
         }
     }
