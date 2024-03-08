@@ -10,10 +10,7 @@ namespace LeapYearsKata
         }
         public bool IsLeapYear()
         {
-            if (IsYearDivisibleBy(400) || (IsYearDivisibleBy(4) && !IsYearDivisibleBy(100)))
-                return true;
-
-            return false;
+            return IsYearDivisibleBy(400) || (IsYearDivisibleBy(4) && !IsYearDivisibleBy(100));
         }
 
         private bool IsYearDivisibleBy(int toDiviseBy)
