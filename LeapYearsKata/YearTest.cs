@@ -28,5 +28,17 @@ namespace LeapYearsKata
             Assert.False(year.IsLeapYear());
         }
 
+        [Fact]
+        public void AllYearsDivisibleBy4ButNotBy100AreLeapYears()
+        {
+            //Arrange 
+            Year year = new Year(2008);
+
+            //Act 
+
+            //Assert
+            Assert.True(year.IsLeapYear());
+        }
+
     }
 }
