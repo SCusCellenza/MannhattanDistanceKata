@@ -1,12 +1,12 @@
 ﻿namespace Banking_Kata
 {
-    public class BankingTransaction
+    public class BankingTransactionDTO
     {
         public DateTime date;
         public int amount;
         public int balance;
 
-        public BankingTransaction(DateTime date, int amount, int balance)
+        public BankingTransactionDTO(DateTime date, int amount, int balance)
         {
             this.date = date;
             this.amount = amount;
