@@ -1,35 +1,19 @@
 ﻿
-using System.Runtime.CompilerServices;
-
 namespace LeapYearsKata
 {
-    public class Year
+    internal class Year
     {
         private int _year;
         public Year(int year)
         {
-            int _year = year;
-            bool _isLeap = false;
+            _year = year;
         }
 
-        public bool IsLeap()
+        internal bool IsLeapYear()
         {
-            if (this.DivisibleBy400())
+            if (_year % 400 == 0)
                 return true;
-            if (this.DivisibleBy100())
-                return false;
             return false;
         }
-        
-        private bool DivisibleBy400()
-        {
-            return _year % 400 == 0;
-        }
-
-        private bool DivisibleBy100()
-        {
-            return _year % 100 == 0;
-        }
-
     }
 }
