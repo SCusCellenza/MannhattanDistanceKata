@@ -2,9 +2,9 @@
 {
     public class BankingTransactionDTO
     {
-        public DateTime date;
-        public int amount;
-        public int balance;
+        public DateTime date { get; private set; }
+        public int amount { get; private set; }
+        public int balance { get; private set; }
 
         public BankingTransactionDTO(DateTime date, int amount, int balance)
         {
