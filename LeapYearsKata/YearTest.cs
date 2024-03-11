@@ -7,8 +7,10 @@ namespace LeapYearsKata
         [Fact]
         public void AllYearsDivisibleBy400AreLeapYears()
         {
-            //Arrange 
-            Year year = new Year(2000);
+            //Arrange
+            Random rdm = new Random();
+            int yearToTest = rdm.Next(1, 10) * 400;
+            Year year = new Year(yearToTest);
 
             //Act 
 
@@ -20,7 +22,13 @@ namespace LeapYearsKata
         public void AllYearsDivisibleBy100ButNotBy400AreNotLeapYears()
         {
             //Arrange 
-            Year year = new Year(1700);
+            Random rdm = new Random();
+            int yearToTest;
+            do {
+                yearToTest = rdm.Next(1, 40) * 100;
+            }
+            while (yearToTest % 400 == 0);
+            Year year = new Year(yearToTest);
 
             //Act 
 
@@ -31,8 +39,15 @@ namespace LeapYearsKata
         [Fact]
         public void AllYearsDivisibleBy4ButNotBy100AreLeapYears()
         {
-            //Arrange 
-            Year year = new Year(2008);
+            //Arrange
+            Random rdm = new Random();
+            int yearToTest;
+            do
+            {
+                yearToTest = rdm.Next(1, 1000) * 4;
+            }
+            while (yearToTest % 100 == 0);
+            Year year = new Year(yearToTest);
 
             //Act 
 
